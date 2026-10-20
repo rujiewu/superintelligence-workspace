@@ -3,7 +3,7 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "dfeebf4a8886df6c149ca1609e2b0af52ad1f39a",
+  "source_commit": "5ad120730d1f15197cb5d71de13d4459dd7061fb",
   "base": "/superintelligence-workspace",
   "modules": {
     "reading": 15,
@@ -249,7 +249,7 @@
         "john-snow-mode-communication-cholera": "abc8a8fbc7821a07fbb5f258bc73198d7234de8da99fbe4421606329ea97660e",
         "plato-republic": "7a16a65926aa2aee80a98a39836a07115d502c2f57c717d488ff3625cc78d4ea",
         "rene-descartes-discourse-method": "da78b2ecd29a6d2628bb97f958a9a1d025552ccd3b789d2961ab9dca40979c8e",
-        "harvey-circulation-reading": "81dda923454d26f05dda08e793466b4f5365c16bf72ce0b2165c051b70f06861",
+        "harvey-circulation-reading": "669ff5d7b42b239b26b31bdc932358f241ff711b96dcfb3982b8c779466d25a1",
         "vitruvius-architecture-reading": "51c6dc88ec5853da049595cc0ffc6b29249842c85140a22520484ab1771ed52b",
         "mill-liberty-reading": "fd0c513f2e72f068a05c3da2b098b08bcc098171ddafde37d0589c66e573a892",
         "cato-agriculture-reading": "20e7889eac31c2e1b9714813f2b9b691a3b28c909b098d849df633c2a5f5a11e"
