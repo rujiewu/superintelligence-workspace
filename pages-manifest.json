@@ -3,7 +3,7 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "f73e85eac96eec252089aa1cee24abdfb13b9b99",
+  "source_commit": "8a26d888100ef4801d1206d03edb1a8804637da0",
   "base": "/superintelligence-workspace",
   "modules": {
     "reading": 15,
@@ -247,7 +247,7 @@
         "confucius-analects": "f2a981ca0415834c39d2cf74f307681a18835a0e04996b3aea73027cb7cc66f1",
         "euclid-elements": "2625b07ceac514fceea2544253c8d5695a1e3fac6f710575976c086b72149667",
         "john-snow-mode-communication-cholera": "abc8a8fbc7821a07fbb5f258bc73198d7234de8da99fbe4421606329ea97660e",
-        "plato-republic": "7a16a65926aa2aee80a98a39836a07115d502c2f57c717d488ff3625cc78d4ea",
+        "plato-republic": "b5c013a41bd9cc6ff9564d2b8757618d5122a17b72f7f3c5def93e67143ec6fc",
         "rene-descartes-discourse-method": "da78b2ecd29a6d2628bb97f958a9a1d025552ccd3b789d2961ab9dca40979c8e",
         "harvey-circulation-reading": "669ff5d7b42b239b26b31bdc932358f241ff711b96dcfb3982b8c779466d25a1",
         "vitruvius-architecture-reading": "51c6dc88ec5853da049595cc0ffc6b29249842c85140a22520484ab1771ed52b",
