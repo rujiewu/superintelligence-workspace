@@ -3,7 +3,7 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "fa508c8215b31772897d290fdbafbeb1fd120c94",
+  "source_commit": "41229dab2c54045b2f6334594e769551fd0d6464",
   "base": "/superintelligence-workspace",
   "modules": {
     "reading": 15,
@@ -248,7 +248,7 @@
         "euclid-elements": "2625b07ceac514fceea2544253c8d5695a1e3fac6f710575976c086b72149667",
         "john-snow-mode-communication-cholera": "abc8a8fbc7821a07fbb5f258bc73198d7234de8da99fbe4421606329ea97660e",
         "plato-republic": "7a16a65926aa2aee80a98a39836a07115d502c2f57c717d488ff3625cc78d4ea",
-        "rene-descartes-discourse-method": "a0b66d5f2faa331e6701a8f252a4537193fc35ec62a0016202226e7fe7802fb4",
+        "rene-descartes-discourse-method": "da78b2ecd29a6d2628bb97f958a9a1d025552ccd3b789d2961ab9dca40979c8e",
         "harvey-circulation-reading": "81dda923454d26f05dda08e793466b4f5365c16bf72ce0b2165c051b70f06861",
         "vitruvius-architecture-reading": "51c6dc88ec5853da049595cc0ffc6b29249842c85140a22520484ab1771ed52b",
         "mill-liberty-reading": "fd0c513f2e72f068a05c3da2b098b08bcc098171ddafde37d0589c66e573a892",
