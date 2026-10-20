@@ -3,7 +3,7 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "5396df38c2effb944bdd2b46734fe033cf57ed59",
+  "source_commit": "3072a4e523470ae840b03af7e071fffcbe280340",
   "base": "/superintelligence-workspace",
   "modules": {
     "reading": 15,
@@ -307,7 +307,7 @@
       "trading": {
         "current_meta_prompt": "fb80dae85fc92d6a91b1dcd4d8614db65178fc4ba28e4f83408800b218265214",
         "investment_policy": "1cf86027023409802adbb95445e3d1697f688ec3b229b8e7f89e5ab372801e47",
-        "universe_design": "9c30c6e7c955ce012aae2b7917a657a9a71370ea907f020d1246cfe88c1be170",
+        "universe_design": "8d382606822c0bccce268595d794cdffb323b66d8fe3813891687ed9a5202a0a",
         "data_sources": "2b04ae07af86e3c542b9009a773e1d69e11382ce3ea7dec1a3c06ef78dec4de3",
         "risk_policy": "c5fbb2938b509f0fed424dd8e6ac60ce8edfa12624c107052922cc4df3a60ba5",
         "strategy_registry": "381e866b06878444a5e5be6c9f4b1670652ab8784e639d868598f0d2f25b6f7e",
