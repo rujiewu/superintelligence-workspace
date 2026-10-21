@@ -3,7 +3,7 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "780f2d4feb52f94c274bcfa6c934bd250c2fcb33",
+  "source_commit": "92e9b9b2d78ef7aac512ff3d376eb4fe6df84db2",
   "base": "/superintelligence-workspace",
   "modules": {
     "reading": 15,
@@ -328,7 +328,7 @@
         "strategy_registry": "4ce5a4114170e832470f5195a93d7700523dd542bf7df24ce2f2dd7a5568cdb8",
         "ai-automation-payback": "76c2ec116671f94c48a0b1197db376f86529fb4c3875525b07b4bd70d8a82cf7",
         "ai-capacity-commitment": "f0f6a1f26add4e420bd6a51437b8810e484984a17251690df93600bf976fb39c",
-        "ai-capital-cycle": "37ac4d23c1ce32a01ec1d56c178f784c653fd3e69df32400267b728fce97cd79",
+        "ai-capital-cycle": "04a39f14653553621f4dac5b64d88c373dbb60d1b64e3c7af27d259fdec4c907",
         "ai-inference-economics": "edfaa78a2d904fe85aeccd5790a31132c9f252c0c753fb0c87a6d6eb824f1ab9",
         "backtest-selection": "e7e593cb567dd4750bee2815582a9e0e77871c112eb6d9e1efe7f717cc2eed7b",
         "working-capital-bridge": "ca9f8c0578497c9cc0218e288a5b3b41838dca75428a8fedfae4b79d1612f705",
