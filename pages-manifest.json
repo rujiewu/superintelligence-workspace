@@ -3,7 +3,7 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "92e9b9b2d78ef7aac512ff3d376eb4fe6df84db2",
+  "source_commit": "3d55b65f578420c64b9ca5ee1e2b4641d74f6a44",
   "base": "/superintelligence-workspace",
   "modules": {
     "reading": 15,
@@ -331,6 +331,9 @@
         "ai-capital-cycle": "04a39f14653553621f4dac5b64d88c373dbb60d1b64e3c7af27d259fdec4c907",
         "ai-inference-economics": "edfaa78a2d904fe85aeccd5790a31132c9f252c0c753fb0c87a6d6eb824f1ab9",
         "backtest-selection": "e7e593cb567dd4750bee2815582a9e0e77871c112eb6d9e1efe7f717cc2eed7b",
+        "earnings-cashflow": "a8dc55e474abdeead7321829d8f50e24bc71c9389d90851a10135406945ec6ea",
+        "funding-deadline": "09afae6e7c1bcb7e0a44216d056e65b86b59ad6c20f1ea17e6f1de8906fb7a27",
+        "operational-reconciliation": "36d34063348422a841ad336a9399885697edd82aa0c0f1d805765145b94cade4",
         "working-capital-bridge": "ca9f8c0578497c9cc0218e288a5b3b41838dca75428a8fedfae4b79d1612f705",
         "capacity-cost-breakpoint": "11fba856d60d4f98fb97f03f676de95d286095a4fb40949bebbc99651a58c96c",
         "inventory-price-liquidity": "879014cfe3d1cd8f1627f6aa5b3600db0e24a314240d06a64e1d347ddc717970"
