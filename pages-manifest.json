@@ -3,7 +3,7 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "0493d1f5983553c09d18bed3b2a221c6b135d3f0",
+  "source_commit": "df1ce7584ddebce72dc482f804a0096076be5e15",
   "base": "/superintelligence-workspace",
   "modules": {
     "reading": 15,
@@ -272,7 +272,7 @@
         "d03-v33-u3": "49e77769df31ebed61bbf100005762cda3793de4fe657a50204e9c8e4d49d447",
         "d03-v33-u4": "cc04a2e1729745e6a483e6296e6fec552db9f4f1b652c8c5fe5ce4c65e33055c",
         "d03-v33-u5": "81546f9e5dab668ac1f6083b33ab3206def82f30ad810d3ed352adcc673f5ca6",
-        "d03-v33-u6": "32f8b9a764bc4b91dd5af43836ab031a435c3d47c48895b07b365fefcbd2357f",
+        "d03-v33-u6": "3338e6d72889ff7541832338987898305f0cdde7a18d3978f162a9e2491e763b",
         "d04-v33-u1": "e01eda4885597a2a2d0cf1e86a9f3e9e3502e15d52520947f11824cfb7041be2",
         "d04-v33-u2": "c5d3d0566e239483744b761b23e48991daccabbf41a3301f74d14bc6b77bff2a",
         "d04-v33-u3": "d003644b29f8bc10b67bda0b93365331f5b0253d1b67aa37fce4859465fa0aa8",
