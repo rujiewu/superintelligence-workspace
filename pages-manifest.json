@@ -3,7 +3,7 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "91c52c350934a8da872c7326fb1b8491d32db63e",
+  "source_commit": "5614cf154d5db0f666f70c8aa6fbab1b3c06f9a2",
   "base": "/superintelligence-workspace",
   "modules": {
     "reading": 15,
@@ -336,7 +336,11 @@
         "funding-deadline": "09afae6e7c1bcb7e0a44216d056e65b86b59ad6c20f1ea17e6f1de8906fb7a27",
         "leverage-margin": "e4b2be3131f5c49a5d1ea789a15aabf96fa7926d30ab516f423578f5a6c584bc",
         "operational-reconciliation": "36d34063348422a841ad336a9399885697edd82aa0c0f1d805765145b94cade4",
+        "option-payoff": "2c319c514ff4e3057c4b42762a4a71357de9554cedac52db4e67886a87c9fb43",
         "order-execution": "190b903a8302c7ea264cbf42c91e4561b6fbbd130f893ab5293122cbfba7717d",
+        "point-in-time-thesis": "04efe5fc890fd349adf091de96ebe738e15f7755ac921f82b75b5ce9d94fca56",
+        "portfolio-rebalancing": "788797ce024060a24e5bfe3b6a0d665d59f57c63ae6ce84326aa13883d5197ee",
+        "svb-2023-liquidity": "76be61374bf313c2a6211987f364675bb966951373fc98119545661e58445aed",
         "working-capital-bridge": "ca9f8c0578497c9cc0218e288a5b3b41838dca75428a8fedfae4b79d1612f705",
         "capacity-cost-breakpoint": "11fba856d60d4f98fb97f03f676de95d286095a4fb40949bebbc99651a58c96c",
         "inventory-price-liquidity": "879014cfe3d1cd8f1627f6aa5b3600db0e24a314240d06a64e1d347ddc717970"
