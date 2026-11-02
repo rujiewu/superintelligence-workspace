@@ -3,10 +3,10 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "5e93c62a95a9e9071637056f72db5081f7cb53b0",
+  "source_commit": "96bee376de8146cf7c2a16622d1f678d127971a9",
   "base": "/superintelligence-workspace",
   "modules": {
-    "reading": 86,
+    "reading": 88,
     "learning": 63,
     "trading": 26,
     "investment": 3
@@ -261,7 +261,9 @@
         "khwarizmi-equations-conditions-reading": "85a132a701d5e5dfb94a610072d69488d513a04b2536343323ddcc0b4b88768b",
         "galileo-observation-inference-reading": "fb9d87a058c59fc0f85e8b0dbae1845c6833dbebaac8fc59fb3c0f38091a19ed",
         "turing-computable-numbers-reading": "a67931eb6f9494b77f25bd8aa121903f7fa058a186b0a1a8c6f02c1eee48c3f9",
-        "ricardo-principles-reading": "8e7205672b35ab9be9ef19eebfbd310e2619c6868922c1ea5b2945ce5b27dfbd"
+        "ricardo-principles-reading": "8e7205672b35ab9be9ef19eebfbd310e2619c6868922c1ea5b2945ce5b27dfbd",
+        "pavlov-conditioned-reflexes-reading": "0cf7e5e5eb4093abc0c528e0aac0ecb050fca034d4f2a1896e7face32ba335a2",
+        "diamond-sutra-reading": "5e4c11b3d3d9f33613e2c7a4328a7dea9eb895fbc06994075baa704fbbc31437"
       },
       "learning": {
         "d01-v33-u1": "805b793701e04c6723559683b34c64a9434acd8fc1efdc3d27538006917ca96e",
