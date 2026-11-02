@@ -3,12 +3,12 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "bf4d08589861e0ad58a8046ee906baa0a98be3bc",
+  "source_commit": "5e93c62a95a9e9071637056f72db5081f7cb53b0",
   "base": "/superintelligence-workspace",
   "modules": {
-    "reading": 84,
+    "reading": 86,
     "learning": 63,
-    "trading": 25,
+    "trading": 26,
     "investment": 3
   },
   "published_books": [
@@ -259,7 +259,9 @@
         "malthus-population-assumptions-reading": "001c65b9a9207a2fc4852969446318992a7f558fabbf505820d309edcae1c059",
         "shelley-frankenstein-responsibility-reading": "a2124c89f6b8abca13112f98518214928cd1af861d611d37abc15b38a527f874",
         "khwarizmi-equations-conditions-reading": "85a132a701d5e5dfb94a610072d69488d513a04b2536343323ddcc0b4b88768b",
-        "galileo-observation-inference-reading": "fb9d87a058c59fc0f85e8b0dbae1845c6833dbebaac8fc59fb3c0f38091a19ed"
+        "galileo-observation-inference-reading": "fb9d87a058c59fc0f85e8b0dbae1845c6833dbebaac8fc59fb3c0f38091a19ed",
+        "turing-computable-numbers-reading": "a67931eb6f9494b77f25bd8aa121903f7fa058a186b0a1a8c6f02c1eee48c3f9",
+        "ricardo-principles-reading": "8e7205672b35ab9be9ef19eebfbd310e2619c6868922c1ea5b2945ce5b27dfbd"
       },
       "learning": {
         "d01-v33-u1": "805b793701e04c6723559683b34c64a9434acd8fc1efdc3d27538006917ca96e",

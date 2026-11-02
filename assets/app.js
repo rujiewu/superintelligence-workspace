@@ -796,6 +796,9 @@
       if (item.placement && (state.module === "learning" || ["METADATA", "RESOURCE_ROUTE"].includes(item.placement.depth))) {
         const label = state.module === "learning" ? item.evidence?.lesson ? "教学课" : "资源路线" : item.placement.depth_label;
         button.append(make("span", "resource-placement", label));
+        if (state.module === "learning" && workspaceState?.review?.(item.id, localToday())?.due) {
+          button.append(make("span", "resource-review-due", "待复习"));
+        }
       }
       fragment.append(button);
     });
@@ -1155,6 +1158,39 @@
       });
       host.append(prerequisiteList);
     }
+    if (state.module === "learning" && workspaceState?.review) host.append(reviewControl(item));
+  }
+
+  function localToday() {
+    const now = new Date();
+    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+  }
+
+  // Review state is private to this browser (localStorage), see workspace-state.js.
+  function reviewControl(item) {
+    const wrapper = make("span", "placement-review");
+    const select = make("select", "review-status");
+    select.setAttribute("aria-label", "学习状态");
+    for (const [value, label] of [["new", "未开始"], ["learning", "学习中（约一周后复习）"],
+      ["reviewed", "已复习（约一月后再复习）"], ["mastered", "已掌握"]]) {
+      const option = make("option", "", label);
+      option.value = value;
+      select.append(option);
+    }
+    const when = make("span", "review-next");
+    const show = review => {
+      select.value = review.status;
+      when.textContent = review.next ? `${review.due ? "已到复习日" : "下次复习"}：${review.next}` : "";
+      when.classList.toggle("due", review.due);
+    };
+    show(workspaceState.review(item.id, localToday()));
+    select.addEventListener("change", () => {
+      const review = workspaceState.setReview(item.id, select.value, localToday());
+      if (review) show(review);
+      renderResourceList();
+    });
+    wrapper.append(make("span", "", "学习状态："), select, when);
+    return wrapper;
   }
 
   function renderMaterialSequence(item) {

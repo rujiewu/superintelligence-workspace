@@ -50,6 +50,11 @@
 .placement-stage { color: var(--ink); }
 .placement-depth { color: var(--muted); }
 .placement-prerequisites a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 2px; }
+.placement-review { display: inline-flex; align-items: center; gap: 6px; }
+.placement-review select { font: inherit; font-size: 12px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1px 4px; }
+.review-next { margin-left: 4px; }
+.review-next.due, .resource-review-due { color: var(--accent-ink); font-weight: 650; }
+.resource-review-due { display: inline-block; margin-left: 6px; font-size: 11px; }
 .detail-body { padding-top: 8px; font-size: 16px; line-height: 1.95; overflow-wrap: anywhere; container-type: inline-size; }
 .detail-body > h3:first-child { margin-top: 12px; }
 .catalog-filters { padding: 10px 8px 0; }
