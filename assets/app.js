@@ -601,6 +601,7 @@
       loadDiscussionModels(token, mode);
       setCatalogStatus("");
       renderResourceList();
+      renderProgressTools();
 
       if (!state.items.length) {
         renderNoResources();
@@ -1164,6 +1165,49 @@
   function localToday() {
     const now = new Date();
     return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+  }
+
+  // Learning review state lives in this browser only; export/import is the backup and transfer path.
+  function renderProgressTools() {
+    document.getElementById("progress-tools")?.remove();
+    if (state.module !== "learning" || !workspaceState?.exportReviews) return;
+    const row = make("div", "progress-tools");
+    row.id = "progress-tools";
+    const exportButton = make("button", "progress-tool", "导出学习进度");
+    exportButton.type = "button";
+    exportButton.addEventListener("click", () => {
+      const data = workspaceState.exportReviews(new Date().toISOString());
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+      const link = make("a", "");
+      link.href = URL.createObjectURL(blob);
+      link.download = `learning-progress-${localToday()}.json`;
+      link.click();
+      URL.revokeObjectURL(link.href);
+      notify(`已导出 ${Object.keys(data.reviews).length} 个单元的学习状态。`);
+    });
+    const importButton = make("button", "progress-tool", "导入");
+    importButton.type = "button";
+    const picker = make("input", "");
+    picker.type = "file";
+    picker.accept = "application/json,.json";
+    picker.hidden = true;
+    importButton.addEventListener("click", () => picker.click());
+    picker.addEventListener("change", async () => {
+      const file = picker.files?.[0];
+      picker.value = "";
+      if (!file) return;
+      try {
+        const result = workspaceState.importReviews(JSON.parse(await file.text()));
+        notify(`已导入 ${result.imported} 个单元，跳过 ${result.skipped} 个（无效或本机更新）。`);
+        renderResourceList();
+        const item = findItem(state.selectedId);
+        if (item) renderPlacement(item);
+      } catch (error) {
+        notify(error instanceof SyntaxError ? "文件不是有效的 JSON。" : error.message);
+      }
+    });
+    row.append(make("span", "", "进度仅存本机："), exportButton, importButton, picker);
+    elements["resource-list"].before(row);
   }
 
   // Review state is private to this browser (localStorage), see workspace-state.js.

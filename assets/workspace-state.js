@@ -65,6 +65,42 @@ window.HUB_WORKSPACE_STATE = (storage) => {
     dueReviews(ids, today) {
       return ids.filter(id => this.review(id, today)?.due);
     },
+    // Portable backup of review state (localStorage is per browser and can be cleared).
+    exportReviews(exportedAt) {
+      const reviews = {};
+      let keys = [];
+      try { keys = Array.from({ length: storage().length }, (_, i) => storage().key(i)); } catch { keys = []; }
+      for (const key of keys) {
+        if (!key?.startsWith("hub-learning-review-v1:")) continue;
+        const resource = key.slice("hub-learning-review-v1:".length);
+        let saved = null;
+        try { saved = JSON.parse(read(key) || "null"); } catch { saved = null; }
+        if (identity(resource) && saved && Object.hasOwn(statuses, saved.status)) {
+          reviews[resource] = { status: saved.status, next: isoDate(saved.next) ? saved.next : null,
+            updated: isoDate(saved.updated) ? saved.updated : null };
+        }
+      }
+      return { schema: "hub-learning-review-export-v1", exported_at: exportedAt, reviews };
+    },
+    importReviews(data) {
+      if (!data || data.schema !== "hub-learning-review-export-v1" || typeof data.reviews !== "object"
+          || data.reviews === null || Array.isArray(data.reviews)) {
+        throw new Error("不是学习进度导出文件。");
+      }
+      let imported = 0, skipped = 0;
+      for (const [resource, row] of Object.entries(data.reviews)) {
+        const valid = identity(resource) && row && Object.hasOwn(statuses, row.status) && row.status !== "new"
+          && (row.next === null || isoDate(row.next)) && (row.updated === null || isoDate(row.updated));
+        if (!valid) { skipped++; continue; }
+        let current = null;
+        try { current = JSON.parse(read(reviewKey(resource)) || "null"); } catch { current = null; }
+        // Keep whichever record was updated later; equal dates prefer the file being imported.
+        if (current?.updated && row.updated && current.updated > row.updated) { skipped++; continue; }
+        write(reviewKey(resource), JSON.stringify({ status: row.status, next: row.next, updated: row.updated }));
+        imported++;
+      }
+      return { imported, skipped };
+    },
     focus() { return read("hub-focus-v1") === "true"; },
     setFocus(enabled) { write("hub-focus-v1", String(Boolean(enabled))); },
   });

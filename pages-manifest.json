@@ -3,12 +3,12 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "96bee376de8146cf7c2a16622d1f678d127971a9",
+  "source_commit": "8b4aba8bce391ca2b1a6397f1d477f35c33cf7fe",
   "base": "/superintelligence-workspace",
   "modules": {
-    "reading": 88,
+    "reading": 90,
     "learning": 63,
-    "trading": 26,
+    "trading": 27,
     "investment": 3
   },
   "published_books": [
@@ -263,7 +263,9 @@
         "turing-computable-numbers-reading": "a67931eb6f9494b77f25bd8aa121903f7fa058a186b0a1a8c6f02c1eee48c3f9",
         "ricardo-principles-reading": "8e7205672b35ab9be9ef19eebfbd310e2619c6868922c1ea5b2945ce5b27dfbd",
         "pavlov-conditioned-reflexes-reading": "0cf7e5e5eb4093abc0c528e0aac0ecb050fca034d4f2a1896e7face32ba335a2",
-        "diamond-sutra-reading": "5e4c11b3d3d9f33613e2c7a4328a7dea9eb895fbc06994075baa704fbbc31437"
+        "diamond-sutra-reading": "5e4c11b3d3d9f33613e2c7a4328a7dea9eb895fbc06994075baa704fbbc31437",
+        "shannon-mathematical-theory-communication-reading": "41144b0067e02ded28ce687d30a0b11e20c633592b79efe6750bc17d1857b991",
+        "simon-administrative-behavior-reading": "152aeb1a1625069dea2bf5bdf7a2c3238edbc2a0f1e93e7997bdb68de330580a"
       },
       "learning": {
         "d01-v33-u1": "805b793701e04c6723559683b34c64a9434acd8fc1efdc3d27538006917ca96e",
