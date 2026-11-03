@@ -4,7 +4,7 @@ window.HUB_SHARED_TRANSPORT = (config, dependencies = {}) => {
   const storage = dependencies.storage || (() => window.sessionStorage);
   const local = dependencies.localStorage || (() => window.localStorage);
   const clock = dependencies.now || (() => Date.now());
-  const modules = new Set(['reading', 'learning', 'trading', 'investment']);
+  const modules = new Set(['reading', 'learning', 'trading', 'investment', 'stock']);
   const base = String(config.base || '').replace(/\/$/, '');
   const apiBase = String(config.apiBase || '').replace(/\/$/, '');
   const fallbackBase = String(config.apiFallbackOrigin || '').replace(/\/$/, '');

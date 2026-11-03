@@ -2,7 +2,7 @@
    Review state stays in this browser's localStorage (ADR 0076): status plus the next review
    date from the catalog rule (about one week after learning, about one month after review). */
 window.HUB_WORKSPACE_STATE = (storage) => {
-  const modules = new Set(["reading", "learning", "trading", "investment"]);
+  const modules = new Set(["reading", "learning", "trading", "investment", "stock"]);
   const identity = value => typeof value === "string" && /^[a-z0-9_-]{1,160}$/.test(value);
   const read = key => {
     try { return storage().getItem(key); } catch { return null; }

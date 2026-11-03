@@ -3,13 +3,14 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "8b4aba8bce391ca2b1a6397f1d477f35c33cf7fe",
+  "source_commit": "fa035637db28dff7004f097e171bd2d4a7c4057c",
   "base": "/superintelligence-workspace",
   "modules": {
     "reading": 90,
     "learning": 63,
     "trading": 27,
-    "investment": 3
+    "investment": 3,
+    "stock": 1
   },
   "published_books": [
     "abelson-sussman-sicp",
@@ -85,7 +86,8 @@
       },
       "investment": {
         "investment-workspace": "cf52907767ef311093a5e1da5aec4da8475cf5d57723ba49635243af7f956378"
-      }
+      },
+      "stock": {}
     }
   },
   "editorial_editions": {
@@ -196,7 +198,8 @@
       },
       "investment": {
         "investment-workspace": "5a617bd0e19b3e90cb86c256332a3cfb7c135f0b50a21ae14ca212a05050bb5c"
-      }
+      },
+      "stock": {}
     }
   },
   "content_expansions": {
@@ -289,7 +292,8 @@
       "investment": {
         "investment-fees-compounding": "fdff16602e16cce40ed00b82cd51501e8667bda4fb71f1d2362daa60df8f4b39",
         "investment-decision-range": "b0c3349766ada82a027548a443e7bec182f01041a9d0fc3ec8ade168f767d1c1"
-      }
+      },
+      "stock": {}
     }
   },
   "content_continuations": {
@@ -406,7 +410,8 @@
         "investment-workspace": "e03d8def63724a95a6e222a3470c646cc124b7c984cec8643a4c8f63f760ca56",
         "investment-fees-compounding": "48af103747c850f54fcd4e24fb99f85da7ad69ec57b8573191887f8c7ce0a5bc",
         "investment-decision-range": "f4fcb8a85e4c1416dc0a50624c166a8d175ea5862c21932a004e52f84e92629a"
-      }
+      },
+      "stock": {}
     }
   },
   "transport": "shared",

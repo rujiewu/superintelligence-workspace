@@ -3,7 +3,7 @@ window.HUB_GITHUB_TRANSPORT = (config, dependencies = {}) => {
   const fetcher = dependencies.fetch || window.fetch.bind(window);
   const sleep = dependencies.sleep || (ms => new Promise(resolve => setTimeout(resolve, ms)));
   const storage = dependencies.storage || (() => window.sessionStorage);
-  const modules = new Set(['reading', 'learning', 'trading', 'investment']);
+  const modules = new Set(['reading', 'learning', 'trading', 'investment', 'stock']);
   const branch = 'personal-state';
   const owner = config.owner.toLowerCase();
   const base = config.base.replace(/\/$/, '');

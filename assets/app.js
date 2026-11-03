@@ -443,10 +443,10 @@
     if (!href || href.startsWith("#")) return href;
     const url = new URL(href, location.href);
     if (url.origin !== location.origin) return href;
-    const modulePath = /\/(reading|learning|trading|investment)\/?$/;
+    const modulePath = /\/(reading|learning|trading|investment|stock)\/?$/;
     if (!modulePath.test(url.pathname)) return href;
     const base = String(window.HUB_SITE_BASE || "").replace(/\/$/, "");
-    if (base && /^\/(reading|learning|trading|investment)\/?$/.test(url.pathname)) url.pathname = base + url.pathname;
+    if (base && /^\/(reading|learning|trading|investment|stock)\/?$/.test(url.pathname)) url.pathname = base + url.pathname;
     if (state.readOnly) url.searchParams.set("read", "public");
     else url.searchParams.delete("read");
     return `${url.pathname}${url.search}${url.hash}`;

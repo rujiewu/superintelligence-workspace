@@ -17,4 +17,8 @@ window.HUB_MODULES = Object.freeze({
     groupLabel: "学习领域",
     initialResource: "d11-v33-u1",
   },
+  stock: {
+    eyebrow: "STOCK RESEARCH AGENT", title: "股票研究",
+    groupLabel: "研究材料", initialResource: "stock-workspace",
+  },
 });
