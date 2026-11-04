@@ -26,9 +26,10 @@ window.HUB_BOOK_STUDY = (() => {
   function pageSections(study) {
     const reflection = new Set(['takeaway', 'argument-map', 'visualizations', 'connections', ...(REFLECTION[study.book_id] || [])]);
     const shared = new Set(['sources', 'argument-map', 'visualizations', ...(CONTEXT[study.book_id] || [])]);
+    // Consolidated books (ADR 0078) name their page in the section identity.
     return Object.fromEntries(study.sections.map(section => [section.id,
       shared.has(section.id) || section.id.startsWith('book-section-') ? 'shared'
-        : reflection.has(section.id) ? 'reflection' : 'lecture']));
+        : reflection.has(section.id) || section.id.startsWith('reflect-') ? 'reflection' : 'lecture']));
   }
   function setPage(page, reason = 'navigation') {
     if (!root || !['lecture', 'reflection'].includes(page)) return;
