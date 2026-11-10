@@ -3,7 +3,7 @@
   "kind": "PUBLIC_ALLOWLIST_ONLY",
   "repository": "rujiewu/SuperIntelligence",
   "public_repository": "rujiewu/superintelligence-workspace",
-  "source_commit": "15b16baa84527db83023c7cae80c64f0ffc10338",
+  "source_commit": "578ed87752ec3215ceb64ae7a50eb58c2b316b83",
   "base": "/superintelligence-workspace",
   "modules": {
     "reading": 90,
